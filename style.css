@@ -1,0 +1,89 @@
+html, body {
+    background-color: #242424;
+    color: #aaa;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#quote {
+    width: 50%;
+    left: 25%;
+    top: 50px;
+    position: absolute;
+    opacity: 50%;
+    text-align: center;
+}
+
+#space {
+    letter-spacing: 0.5em;
+    opacity: 100%;
+    color: #959;
+}
+
+#videos {
+    width: 50%;
+    height: 500px;
+    left: 25%;
+    top: 200px;
+    position: absolute;
+    text-align: center;
+    background-color: #242424;
+    box-shadow: inset 0 0 10px #000;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 50px;
+    background-color: #242424;
+    border: 1px solid #959;
+    color: #959;
+    transition: 250ms;
+    transition-timing-function: ease-in-out;
+}
+#btnleft { left: 40%; }
+#btnright { right: 40%; }
+button:hover {
+    box-shadow: #959 0 0 10px;
+}
+
+#video1 {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 15px;
+    opacity: 100%;
+    display: block;
+}
+
+#video2 {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 15px;
+    opacity: 0%;
+    display: none;
+}
+
+#video3 {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 15px;
+    opacity: 0%;
+    display: none;
+}
+
+#video4 {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 15px;
+    opacity: 0%;
+    display: none;
+}
+
+iframe {
+    transition: 1000ms;
+}
