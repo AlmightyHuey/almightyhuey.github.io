@@ -42,8 +42,8 @@ button {
     transition: 250ms;
     transition-timing-function: ease-in-out;
 }
-#btnleft { left: 40%; }
-#btnright { right: 40%; }
+#btnleft { left: 30%; }
+#btnright { right: 30%; }
 button:hover {
     box-shadow: #959 0 0 10px;
 }
