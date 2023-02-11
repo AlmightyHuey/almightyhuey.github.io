@@ -62,3 +62,14 @@ function changeVideo(dir) {
 
 document.getElementById("btnleft").addEventListener("click", function() {changeVideo(0)});
 document.getElementById("btnright").addEventListener("click", function() {changeVideo(1)});
+
+//resize listener
+window.addEventListener("resize", function() {
+    if(window.innerWidth < 600) {
+        document.getElementById("leftmusic").style.left = "-"+window.innerWidth/2+"px";
+        document.getElementById("rightmusic").style.right = "-"+window.innerWidth/2+"px";
+    } else {
+        document.getElementById("leftmusic").style.left = "0px";
+        document.getElementById("rightmusic").style.right = "0px";
+    }
+});

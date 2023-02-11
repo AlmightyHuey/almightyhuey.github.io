@@ -95,6 +95,8 @@ button:hover {
     box-shadow: #000 0 0 50px;
     text-align: center;
     display: inline-block;
+    transition: 150ms;
+    transition-timing-function: linear;
 }
 #rightmusic {
     position: absolute;
@@ -106,4 +108,6 @@ button:hover {
     box-shadow: #000 0 0 50px;
     text-align: center;
     display: inline-block;
+    transition: 150ms;
+    transition-timing-function: linear;
 }
