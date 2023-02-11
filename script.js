@@ -73,3 +73,14 @@ window.addEventListener("resize", function() {
         document.getElementById("rightmusic").style.right = "0px";
     }
 });
+
+//onload, if width<600, do same as above
+window.onload = function() {
+    if(window.innerWidth < 600) {
+        document.getElementById("leftmusic").style.left = "-"+window.innerWidth/2+"px";
+        document.getElementById("rightmusic").style.right = "-"+window.innerWidth/2+"px";
+    } else {
+        document.getElementById("leftmusic").style.left = "0px";
+        document.getElementById("rightmusic").style.right = "0px";
+    }
+}
