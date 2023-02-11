@@ -1,4 +1,6 @@
 # [almightyhuey.github.io](https://almightyhuey.github.io)
-* work on compatibility for mobile
-* * static video w/ aspect ratio to fill up div
-* video swap animation
+* redo, make 2 divs with same content different formats
+* * 1 for mobile
+* * 1 for desktop
+* * w > h = desktop
+* * h > w = mobile
