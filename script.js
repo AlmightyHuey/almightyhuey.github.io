@@ -1,4 +1,5 @@
 let currVid = 1;
+let musicOpen = true;
 
 function changeVideo(dir) {
     let vid1 = document.getElementById("video1");
@@ -60,27 +61,39 @@ function changeVideo(dir) {
     }
 }
 
+function toggleMusic(mO) {
+    if (mO == true) {
+        document.getElementById("leftmusic").style.left = "0px";
+        document.getElementById("rightmusic").style.right = "0px";
+    } else {
+        document.getElementById("leftmusic").style.left = "-"+window.innerWidth/2+"px";
+        document.getElementById("rightmusic").style.right = "-"+window.innerWidth/2+"px";
+    }
+}
+
 document.getElementById("btnleft").addEventListener("click", function() {changeVideo(0)});
 document.getElementById("btnright").addEventListener("click", function() {changeVideo(1)});
+document.getElementById("musicbtn").addEventListener("click", function() {
+    musicOpen = !musicOpen;
+    toggleMusic(musicOpen)
+});
 
 //resize listener
 window.addEventListener("resize", function() {
     if(window.innerWidth < 600) {
-        document.getElementById("leftmusic").style.left = "-"+window.innerWidth/2+"px";
-        document.getElementById("rightmusic").style.right = "-"+window.innerWidth/2+"px";
+        musicOpen = false;
     } else {
-        document.getElementById("leftmusic").style.left = "0px";
-        document.getElementById("rightmusic").style.right = "0px";
+        musicOpen = true;
     }
+    toggleMusic(musicOpen);
 });
 
 //onload, if width<600, do same as above
 window.onload = function() {
     if(window.innerWidth < 600) {
-        document.getElementById("leftmusic").style.left = "-"+window.innerWidth/2+"px";
-        document.getElementById("rightmusic").style.right = "-"+window.innerWidth/2+"px";
+        musicOpen = false;
     } else {
-        document.getElementById("leftmusic").style.left = "0px";
-        document.getElementById("rightmusic").style.right = "0px";
+        musicOpen = true;
     }
+    toggleMusic(musicOpen);
 }

@@ -126,3 +126,11 @@ button:hover {
     opacity: 200%;
     text-shadow: #959 0 0 10px;
 }
+
+#musicbtn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+}
