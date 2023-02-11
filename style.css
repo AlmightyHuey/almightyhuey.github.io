@@ -102,3 +102,27 @@ button:hover {
     transition: 150ms;
     transition-timing-function: linear;
 }
+
+.creds {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+    opacity: 100%;
+}
+
+.creds>a {
+    color: #959;
+    text-decoration: none;
+    opacity: 50%;
+    transition: 200ms;
+}
+
+.creds>a:hover {
+    color: #d9d;
+    opacity: 200%;
+    text-shadow: #959 0 0 10px;
+}
