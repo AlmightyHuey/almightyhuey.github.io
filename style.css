@@ -52,7 +52,7 @@ html, body {
     height: 50%;
 } #vidcontainer {
     position: absolute;
-    left: 48.5%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
     height: 0;
@@ -118,14 +118,14 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 23.8%;
+    width: 25%;
     height: 64%;
     box-shadow: #000 0 0 10px;
 } #rightmusiccontainer {
     position: absolute;
     top: 0;
     right: 0;
-    width: 23.8%;
+    width: 25%;
     height: 64%;
     box-shadow: #000 0 0 10px;
 }
