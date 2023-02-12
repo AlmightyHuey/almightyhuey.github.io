@@ -4,3 +4,5 @@
 * * 1 for desktop
 * * w > h = desktop
 * * h > w = mobile
+* do mobile version now
+* then do desktop animations
