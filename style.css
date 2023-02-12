@@ -3,7 +3,6 @@ html, body {
     color: #aaa;
     font-family: monospace;
     font-size: 16px;
-    overflow: hidden;
 }
 
 #quote {
@@ -14,97 +13,14 @@ html, body {
     opacity: 50%;
     text-align: center;
 }
-
 #space {
     letter-spacing: 0.5em;
     opacity: 100%;
     color: #959;
 }
 
-#videos {
-    width: 50%;
-    height: 500px;
-    left: 25%;
-    top: 200px;
-    position: absolute;
-    text-align: center;
-    background-color: #242424;
-    box-shadow: inset 0 0 10px #000;
-}
-
-button {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    bottom: 50px;
-    background-color: #242424;
-    border: 1px solid #959;
-    color: #959;
-    transition: 250ms;
-    transition-timing-function: ease-in-out;
-}
-#btnleft { left: 30%; }
-#btnright { right: 30%; }
-button:hover {
-    box-shadow: #959 0 0 10px;
-}
-
-.vidcontainer {
-    width: 100%;
-    height: 350px;
-    position: relative;
-    top: 0;
-    padding-bottom: 56.25%;
-}
-
-#video1 {
-    object-fit: cover;
-    opacity: 100%;
-    display: block;
-}
-
-#video2, #video3, #video4 {
-    opacity: 0%;
-    display: none;
-}
-
-.v1, .v2, .v3, .v4 {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-#leftmusic {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 25%;
-    height: 100%;
-    background-color: #242424;
-    box-shadow: #000 0 0 50px;
-    text-align: center;
-    display: inline-block;
-    transition: 150ms;
-    transition-timing-function: linear;
-}
-#rightmusic {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 25%;
-    height: 100%;
-    background-color: #242424;
-    box-shadow: #000 0 0 50px;
-    text-align: center;
-    display: inline-block;
-    transition: 150ms;
-    transition-timing-function: linear;
-}
-
 .creds {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
@@ -113,24 +29,61 @@ button:hover {
     text-align: center;
     opacity: 100%;
 }
-
 .creds>a {
     color: #959;
     text-decoration: none;
     opacity: 50%;
     transition: 200ms;
 }
-
 .creds>a:hover {
     color: #d9d;
     opacity: 200%;
     text-shadow: #959 0 0 10px;
 }
 
-#musicbtn {
+#vidcontainer {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    width: 75px;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 0;
+    padding-top: 28.125%;
+} #v1 {
+    /*v1 16:9*/
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} #v2 {
+    /*v2 16:9*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} #v3 {
+    /*v3 is 4:3 (padding top goes to 75/2)*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} #v4 {
+    /*v4 is 16:10 (padding top goes to 62.5/2)*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sc {
+    width: 100%;
+    height: 250px;
 }
