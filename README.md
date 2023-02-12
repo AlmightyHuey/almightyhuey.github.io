@@ -4,5 +4,7 @@
 * * 1 for desktop
 * * w > h = desktop
 * * h > w = mobile
-* do mobile version now
+* create middle button that toggles to show/hide music divs
+* * also expand video during this process
+* then do mobile version
 * then do desktop animations
