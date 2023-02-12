@@ -25,7 +25,7 @@ html, body {
 
 .creds {
     position: fixed;
-    bottom: 0px;
+    bottom: 7px;
     left: 50%;
     transform: translateX(-50%);
     color: #aaa;
