@@ -60,3 +60,15 @@ function changeVid(dir) {
             break;
     }
 }
+
+function toggleMusic() {
+    let left = document.getElementById("leftmusiccontainer");
+    let right = document.getElementById("rightmusiccontainer");
+    if(left.style.left == "-25%") {
+        left.style.left = "0";
+        right.style.right = "0";
+    } else {
+        left.style.left = "-25%";
+        right.style.right = "-25%";
+    }
+}

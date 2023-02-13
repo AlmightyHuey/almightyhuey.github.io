@@ -101,11 +101,13 @@ html, body {
     left: 100px;
 } #rb {
     right: 100px;
-} button:hover {
-    background-color: #959;
-    color: #242424;
-    border: 1px solid #242424;
-    box-shadow: #959 0 0 10px;
+} button:hover { box-shadow: #959 0 0 10px; }
+
+#mb {
+    position: absolute;
+    left: 50%;
+    bottom: 7.5%;
+    transform: translateX(-50%);
 }
 
 .sc {
@@ -114,15 +116,19 @@ html, body {
 } #leftmusiccontainer {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0%;
     width: 25%;
     height: 64%;
     box-shadow: #000 0 0 10px;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
 } #rightmusiccontainer {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0%;
     width: 25%;
     height: 64%;
     box-shadow: #000 0 0 10px;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
 }
