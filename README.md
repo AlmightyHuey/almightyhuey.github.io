@@ -1,5 +1,4 @@
 # [almightyhuey.github.io](https://almightyhuey.github.io)
 
-* work on mobile version now  
-* then do desktop animations  
-* detect with w < ???????  
+* https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+* * set up responsive for width being less than 800px, load other than default
